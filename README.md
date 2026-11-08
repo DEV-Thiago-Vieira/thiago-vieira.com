@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="public/images/thiago-480.webp" alt="Thiago Vieira" width="220" />
 
-First, run the development server:
+# Thiago Vieira · Portfólio
+
+**Desenvolvedor Full Stack** — React · Next.js · Vue · TypeScript · Spring Boot
+
+[![Site](https://img.shields.io/badge/Site-thiago--vieira.com-b08b6e?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thiago-vieira.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-dev--thiago--vieira-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dev-thiago-vieira/)
+
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+
+</div>
+
+---
+
+## ✨ Destaques
+
+- ⚡ **100% estático** — `output: "export"` gera HTML/CSS/JS puros em `out/`, hospedável em qualquer lugar.
+- 📝 **Conteúdo orientado a dados** — projetos, habilidades e experiência são objetos TypeScript tipados.
+- 🔍 **SEO completo** — metadata, Open Graph gerado no build, sitemap, robots e JSON-LD.
+- 🌗 **Tema claro/escuro**, layout responsivo e imagens otimizadas em AVIF/WebP.
+
+## 🚀 Como rodar
+
+Pré-requisitos: **Node.js 20.9+** e **pnpm**.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/DEV-Thiago-Vieira/portfolio.git
+cd portfolio
+pnpm install
+pnpm dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Comando | Descrição |
+|---|---|
+| `pnpm dev` | Servidor de desenvolvimento |
+| `pnpm build` | Gera o site estático em `out/` |
+| `pnpm lint` | Executa o ESLint |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Opcional: defina `NEXT_PUBLIC_SITE_URL` no `.env.local` para alterar a URL usada no SEO (padrão: `https://thiago-vieira.com`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✏️ Editando o conteúdo
 
-## Learn More
+| Para alterar… | Edite |
+|---|---|
+| Nome, cargo, descrição e SEO | [`src/config/site.ts`](src/config/site.ts) |
+| E-mail, redes sociais e WhatsApp | [`src/config/contact.ts`](src/config/contact.ts) |
+| Projetos | [`src/features/projects/data.ts`](src/features/projects/data.ts) |
+| Habilidades | [`src/features/skills/data.ts`](src/features/skills/data.ts) |
+| Experiência | [`src/features/experience/data.ts`](src/features/experience/data.ts) |
 
-To learn more about Next.js, take a look at the following resources:
+Cada seção do site fica em sua própria pasta dentro de [`src/features/`](src/features/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Rode `pnpm build` e envie o conteúdo de `out/` para o `public_html/` da hospedagem (Hostinger). O [`.htaccess`](public/.htaccess) incluído força HTTPS, configura a página 404 e o cache do navegador.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📬 **Aberto a novas oportunidades** — [contact@thiago-vieira.com](mailto:contact@thiago-vieira.com)
+
+<sub>© Thiago Vieira. O código é público para referência; o conteúdo pessoal (fotos e textos) pertence ao autor.</sub>
+
+</div>
